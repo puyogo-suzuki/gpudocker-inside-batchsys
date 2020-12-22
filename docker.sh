@@ -19,7 +19,7 @@ getGpuNums() {
 getGpuNums
 gpunums=$?
 gpunums=$((gpunums + 1))
-echo $gpunums
+
 declare -a res_argument=()
 state=0
 for a in $@; do
