@@ -33,7 +33,7 @@ for a in $@; do
     if [[ $a == "all" ]] ; then
       res_argument=(${res_argument[@]} "--gpus" "$gpunums")
     elif [[ "$a" =~ ^[1-9][0-9]* ]] ; then
-      b=a
+      b=$a
       if [[ ${BASH_REMATCH[0]} -gt $gpunums ]] ; then
         length_num=${#BASH_REMATCH[0]}
         length_a=${#a}
